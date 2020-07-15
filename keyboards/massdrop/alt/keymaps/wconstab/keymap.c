@@ -157,8 +157,9 @@ led_instruction_t led_instructions[] = {
     //All key LEDs use red     (id2  67 -  65: 0000 0000 0000 0000 0000 0000 0000 0111 = 0x00000007)
     //Edge uses active pattern (id2  95 -  68: 1111 1111 1111 1111 1111 1111 1111 1000 = 0xFFFFFFF8)
     //Edge uses active pattern (id3 105 -  96: 0000 0000 0000 0000 0000 0011 1111 1111 = 0x000003FF)
-     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 0xFFFFFFFF, .id1 = 0xFFFFFFFF, .id2 = 0x00000007, .r = 127, .g = 127, .b = 127 },
-     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB , .id2 = 0xFFFFFFF8, .id3 = 0x000003FF, .r = 16, .g = 16, .b = 16 },
+
+     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 0xFFFFFFFF, .id1 = 0xFFFFFFFF, .id2 = 0x00000007, .r = 80, .g = 128, .b = 128 },
+     { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB , .id2 = 0xFFFFFFF8, .id3 = 0x000003FF, .r = 10, .g = 16, .b = 16 },
 
     //end must be set to 1 to indicate end of instruction set
      { .end = 1 }
